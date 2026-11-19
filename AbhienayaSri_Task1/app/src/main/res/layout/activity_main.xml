@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="top"
+    tools:context=".MainActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textColor="@color/primaryColor"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="24dp" />
+
+    <!-- Category label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_category"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="@color/textSecondary"
+        android:paddingBottom="4dp" />
+
+    <!-- Category Spinner -->
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:padding="8dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- From / To unit row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <!-- From unit -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_from"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/textSecondary"
+                android:paddingBottom="4dp" />
+
+            <Spinner
+                android:id="@+id/fromSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_background"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- To unit -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_to"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/textSecondary"
+                android:paddingBottom="4dp" />
+
+            <Spinner
+                android:id="@+id/toSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_background"
+                android:padding="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Input label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_value"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="@color/textSecondary"
+        android:paddingBottom="4dp" />
+
+    <!-- Input EditText -->
+    <EditText
+        android:id="@+id/inputValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_enter_value"
+        android:inputType="numberDecimal|numberSigned"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="18sp"
+        android:textColor="@color/textPrimary"
+        android:textColorHint="@color/textSecondary" />
+
+    <!-- Convert Button -->
+    <Button
+        android:id="@+id/convertBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_convert"
+        android:textSize="16sp"
+        android:letterSpacing="0.1"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@android:color/white"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:layout_marginBottom="28dp" />
+
+    <!-- Result -->
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorPrimary"
+        android:padding="16dp"
+        tools:text="100 cm" />
+
+</LinearLayout>

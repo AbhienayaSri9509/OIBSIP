@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#1565C0</color>
+    <color name="primaryDarkColor">#003c8f</color>
+    <color name="primaryLightColor">#5e92f3</color>
+    <color name="accentColor">#FF6D00</color>
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+    <color name="backgroundColor">#FAFAFA</color>
+    <color name="surfaceColor">#FFFFFF</color>
+    <color name="dividerColor">#BDBDBD</color>
+    <!-- Night mode companion values -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

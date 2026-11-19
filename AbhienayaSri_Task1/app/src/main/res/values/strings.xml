@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="label_category">Category</string>
+    <string name="label_from">From</string>
+    <string name="label_to">To</string>
+    <string name="label_value">Value</string>
+    <string name="hint_enter_value">Enter value</string>
+    <string name="btn_convert">CONVERT</string>
+    <string name="error_empty_input">Please enter a value to convert.</string>
+    <string name="error_invalid_input">Invalid number. Please enter a numeric value.</string>
+</resources>
